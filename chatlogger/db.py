@@ -54,13 +54,13 @@ class Db:
         self.cur.execute('''SELECT * FROM telegram''')
         tg_table = self.cur.fetchall()
         if len(tg_table) == 0:
-            id = int(input("введи id: "))
-            hash = input("введи hash: ")
+            id = int(input("enter id: "))
+            hash = input("enter hash: ")
             self.cur.execute(f"INSERT INTO telegram(num, id, hash) Values(1, {id}, '{hash}')")
             self.conn.commit()
         elif 'chatlogger.session' not in os.listdir():
-            id = int(input("введи id: "))
-            hash = input("введи hash: ")
+            id = int(input("enter id: "))
+            hash = input("enter hash: ")
             self.cur.execute(f"UPDATE telegram SET id={id}, hash='{hash}' WHERE num=1")
             self.conn.commit()
         else:
