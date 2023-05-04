@@ -1,6 +1,6 @@
 import sqlite3
 from tzlocal import get_localzone_name
-import utils
+from . import utils
 import os
 
 class Db:
