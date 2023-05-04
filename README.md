@@ -7,6 +7,7 @@ ___
 * **[api id and hash](https://core.telegram.org/api/obtaining_api_id#obtaining-api-id)**
 * **Python 3.6+**
 ___
+
 # Installation
 
 `apt update && apt install git && git clone https://github.com/kibersportovich/telegram-chatlogger && cd telegram-chatlogger && pip3 install -r requirements.txt`
