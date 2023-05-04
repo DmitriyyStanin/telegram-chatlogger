@@ -29,7 +29,11 @@ _use the **[commands](#commands)** in telegram._
   <summary><b>.get_backup</b></summary>
   <img src="https://user-images.githubusercontent.com/131992312/235721739-bcd2004c-7c97-41c2-a342-f3df998cc4f4.gif">
  </details>
+ 
+ ___
 
+* If you want to connect new Telegram account, you just need to remove the chatlogger.session file from the directory
+* With some commands, feedback messages are sent to "Saved Messages" (_**.log | .logmedia | .fast_backup**_)
 
 # Commands
 **.logmedia** - Log media messages in this chat (does not log stickers and gifs) </br>they will be signed and sent to the [logger-chat](#logger-chat)
@@ -57,7 +61,3 @@ tz identifier can be taken from [here](https://en.wikipedia.org/wiki/List_of_tz_
 a chat that receives media messages from logged chats
 <p><img src="https://user-images.githubusercontent.com/131992312/235978342-e037c1f8-0189-4f26-85f8-637f935c0737.gif", width="500"></p>
 
-# In addition
-
-* If you want to connect another Telegram account, you just need to remove the chatlogger.session file from the directory
-* If you use commands to log chats, feedback messages will be sent to "Saved Messages".
