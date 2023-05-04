@@ -3,8 +3,8 @@ import os
 from telethon import TelegramClient, events
 from telethon.tl.types import Message
 from pytz import all_timezones
-from db import Db
-import utils
+from .db import Db
+from . import utils
 
 path = utils.create_path()
 me = int()
