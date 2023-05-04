@@ -34,7 +34,6 @@ async def create_logger_chat(cl, db, db_tools):
             about='',
             megagroup=False))
         id = int('-100' + str(channel.chats[0].id))
-        await cl.send_message(id, '<b><i>made by @kibersportovich</i></b>', parse_mode='HTML')
         db['logger'] = id
         db_tools.replace_logger_id(id)
 
