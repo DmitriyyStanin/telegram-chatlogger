@@ -42,7 +42,7 @@ _use the **[commands](#commands)** in telegram._
 #### In addition:
 * If you want to connect new Telegram account, you just need to remove the chatlogger.session file from the directory
 
-* With some commands, feedback messages are sent to "Saved Messages" (_**.log | .logmedia | .fast_backup**_)
+* With some commands (_**.log | .logmedia | .fast_backup**_) feedback messages are sent to "Saved Messages" 
 
 # Commands
 **.logmedia** - Log media messages in this chat (does not log stickers and gifs) </br>they will be signed and sent to the [logger-chat](#logger-chat)
