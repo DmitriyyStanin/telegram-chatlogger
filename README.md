@@ -10,11 +10,18 @@ ___
 
 # Installation
 
-`apt update && apt install git && git clone https://github.com/kibersportovich/telegram-chatlogger && cd telegram-chatlogger && pip3 install -r requirements.txt`
+```cmd
+apt update && apt install git
+git clone https://github.com/kibersportovich/telegram-chatlogger
+cd telegram-chatlogger
+pip3 install -r requirements.txt
+```
 
 # Start
 
-`python3 -m chatlogger`
+```cmd 
+python3 -m chatlogger
+```
 
 # Usage
 
