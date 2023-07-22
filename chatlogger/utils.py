@@ -1,12 +1,11 @@
 import os
-from pathlib import Path
 from pytz import timezone
 from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.channels import CreateChannelRequest
 
 
-path_db = os.path.join(Path.home(), 'chatlogger', 'db')
-path = os.path.join(Path.home(), 'chatlogger', 'chats')
+path_db = os.path.join('logger-files', 'db')
+path = os.path.join('logger-files', 'chats')
 
 chatlogger = '''
 ┏━━━┓┏┓━┏┓┏━━━┓┏━━━━┓┏┓━━━┏━━━┓┏━━━┓┏━━━┓┏━━━┓┏━━━┓
