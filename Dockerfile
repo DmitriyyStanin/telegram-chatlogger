@@ -1,18 +1,20 @@
-# Use a base image
-FROM python:3.9
+# Use the official PHP image as the base image
+FROM php:7.4-apache
+
+# Copy the application files into the container
+COPY . /var/www/html
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /var/www/html
 
-# Copy the application code to the container
-COPY . /app
+# Install necessary PHP extensions
+RUN apt update && apt install git
+git clone https://github.com/kibersportovich/telegram-chatlogger
+cd telegram-chatlogger
+pip3 install -r requirements.txt
 
-# Install any dependencies needed for the application
-RUN pip install -r requirements.txt
+# Expose port 80
+EXPOSE 80
 
-# Expose the port the application runs on
-EXPOSE 8000
-
-# Set the command to run the application
-CMD ["python", "app.py"]
-
+# Define the entry point for the container
+CMD ["apache2-foreground"]
